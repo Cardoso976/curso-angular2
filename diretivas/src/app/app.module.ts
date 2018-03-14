@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +18,9 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
     DiretivaNgforComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -22,4 +23,17 @@
   <p *ngSwitchCase="'mapa'">Modo Mapa Ativado</p>
   <p *ngSwitchCase="'lista'">Modo Lista Ativado</p>
   <p *ngSwitchDefault>Home</p>
+</div>
+
+<h5>Removendo o * e usando template</h5>
+<div class="container" [ngSwitch]="aba">
+  <ng-template [ngSwitchCase]="'mapa'">
+    <p>Modo Mapa Ativado</p>
+  </ng-template>
+  <ng-template  [ngSwitchCase]="'lista'">
+      <p>Modo Lista Ativado</p>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'home'" ngSwitchDefault>
+      <p>Home</p>
+  </ng-template>  
 </div>
