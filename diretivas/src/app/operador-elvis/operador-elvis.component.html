@@ -1,0 +1,4 @@
+<p>{{ tarefa.desc }}</p>
+<!-- <p>{{ tarefa.responsavel.nome }}</p> -->
+<p>Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome : ''}}</p>
+<p>Responsável: {{ tarefa.responsavel?.usuario?.nome }}</p>
