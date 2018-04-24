@@ -12,8 +12,8 @@ import { AppRoutingModule } from './app.rounting.module';
 // import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 // import { CursosService } from './cursos/cursos.service';
 // import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
-import { CursosModule } from './cursos/cursos.module';
-import { AlunosModule } from './alunos/aluno.module';
+//import { CursosModule } from './cursos/cursos.module';
+//import { AlunosModule } from './alunos/aluno.module';
 
 
 @NgModule({
@@ -27,8 +27,8 @@ import { AlunosModule } from './alunos/aluno.module';
   ],
   imports: [
     BrowserModule,
-    CursosModule,
-    AlunosModule,
+    //CursosModule,
+    //AlunosModule,
     AppRoutingModule
     //routing
   ],
