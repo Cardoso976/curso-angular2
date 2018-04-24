@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { MaterializeModule } from 'angular2-materialize';
@@ -14,6 +15,7 @@ import { AppRoutingModule } from './app.rounting.module';
 // import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 //import { CursosModule } from './cursos/cursos.module';
 //import { AlunosModule } from './alunos/aluno.module';
+import { AuthService } from './login/auth.service';
 
 
 @NgModule({
@@ -27,11 +29,13 @@ import { AppRoutingModule } from './app.rounting.module';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     //CursosModule,
     //AlunosModule,
     AppRoutingModule
     //routing
   ],
+  providers: [AuthService],
   //providers: [CursosService],
   bootstrap: [AppComponent]
 })
